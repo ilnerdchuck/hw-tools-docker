@@ -34,5 +34,5 @@ SSH is enabled and available with X11 forwarding at port `2222`
 
 In the full version the machine has a gui available at the address 
 ```
-http://localhost:6080/vnc.html)
+http://localhost:6080/vnc.html
 ```
