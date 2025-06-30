@@ -13,6 +13,7 @@ Planned to add:
 
 - Verilator
 - GHDL
+- GTKwave
 
 ## Docker Image Info
 
