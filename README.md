@@ -2,10 +2,17 @@
 
 Docker with tools to develop Hardware related projects available on ![Docker Hub](https://hub.docker.com/r/ilnerdchuck/hw_tools)
 
+Further tools will be added as i gather them, if you have any suggestions or issue feel free to open an issue here on github.
+
 | Left-aligned   | slim               |          full      |
 | :---           |     :---:          |          ---:      |
 | Intel Modelsim 22.04 | :white_check_mark: | :white_check_mark: |
 | noVNC          |                    | :white_check_mark: |
+
+Planned to add:
+
+- Verilator
+- GHDL
 
 ## Docker Image Info
 
@@ -32,7 +39,8 @@ SSH is enabled and available with X11 forwarding at port `2222`
 
 ## noVNC
 
-In the full version the machine has a gui available at the address 
+In the full version the machine has a gui available at the address
+
 ```
 http://localhost:6080/vnc.html
 ```
