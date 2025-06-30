@@ -53,6 +53,7 @@ on:
 
 jobs:
     build_and_push_image:
+        environment: DOCKERHUB_TOKEN
         name: Push Docker image to Docker Hub
         runs-on: ubuntu-latest
         permissions:
