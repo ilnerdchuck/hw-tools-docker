@@ -45,3 +45,13 @@ In the full version the machine has a gui available at the address
 ```
 http://localhost:6080/vnc.html
 ```
+
+## Instruction for ARM MACs
+
+Pull the image with
+
+```
+docker pull --platform linux/amd64 ilnerdchuck/hw_tools:full
+```
+
+and run with the command for x86 written above or the docker compose
