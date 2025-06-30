@@ -4,7 +4,7 @@ Docker with tools to develop Hardware related projects available on ![Docker Hub
 
 | Left-aligned   | slim               |          full      |
 | :---           |     :---:          |          ---:      |
-| Modelsim 22.04 | :white_check_mark: | :white_check_mark: |
+| Intel Modelsim 22.04 | :white_check_mark: | :white_check_mark: |
 | noVNC          |                    | :white_check_mark: |
 
 ## Docker Image Info
