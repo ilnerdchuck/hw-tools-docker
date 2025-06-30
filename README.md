@@ -20,7 +20,7 @@ The docker can be started with this command that exposes SSH and the noVNC gui
 
 ```
 
-docker run -d -p 2222:22 -p 5901:5901 -p 6080:6080 --name ubuntu-ssh-container ilnerdchuck/hw_tools:full
+docker run -d -p 2222:22 -p 5901:5901 -p 6080:6080 --name hw_tools ilnerdchuck/hw_tools:full
 
 ```
 
@@ -32,4 +32,7 @@ SSH is enabled and available with X11 forwarding at port `2222`
 
 ## noVNC
 
-In the full version the machine has a gui available at the address ![http://localhost:6080/vnc.html](http://localhost:6080/vnc.html)
+In the full version the machine has a gui available at the address 
+```
+http://localhost:6080/vnc.html)
+```
