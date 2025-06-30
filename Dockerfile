@@ -95,7 +95,8 @@ RUN apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386 lib32ncurses6
 # RUN apt-get install -y libx11-6:i386 libxau6:i386 libxdmcp6:i386 libxext6:i386 libxft2:i386 libxrender1:i386
 # RUN apt-get install -y libxt6:i386 libxtst6:i386
 
-COPY ./ModelSimSetup-20.1.1.720-linux.run .
+# COPY ./ModelSimSetup-20.1.1.720-linux.run .
+RUN wget https://download.altera.com/akdlm/software/acdsinst/20.1std.1/720/ib_installers/ModelSimSetup-20.1.1.720-linux.run
 RUN chmod +x ModelSimSetup-20.1.1.720-linux.run
 RUN mkdir /opt/intelFPGA
 RUN chown dockeruser:dockeruser -R /opt/intelFPGA
