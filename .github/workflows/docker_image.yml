@@ -31,10 +31,9 @@ jobs:
               with:
                   file: ./Dockerfile
                   push: true
-                  platforms: linux/amd64,linux/arm64/v8
                   tags: ilnerdchuck/hw_tools:full
-                  # cache-from: type=registry,ref=ilnerdchuck/hw-ci:buildcache
-                  # cache-to: type=registry,ref=ilnerdchuck/hw-ci:buildcache,mode=max
+                  cache-from: type=registry,ref=ilnerdchuck/hw-ci:buildcache
+                  cache-to: type=registry,ref=ilnerdchuck/hw-ci:buildcache,mode=max
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
