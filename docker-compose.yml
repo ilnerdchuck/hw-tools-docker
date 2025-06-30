@@ -1,0 +1,22 @@
+services:
+    hw_tools:
+        container_name: hw_tools
+        image: ilnerdchuck/hw_tools:full
+        ports:
+            - 6080:6080
+            - 6081:6081
+            - 5901:5901
+            - 4000:4000
+        environment:
+            # Adjust to your screen size
+            - DISPLAY_WIDTH=1600
+            - DISPLAY_HEIGHT=968
+            - RUN_XTERM=no
+        stdin_open: true
+        tty: true
+        volumes:
+            - ./data:/work/data
+#         networks:
+#             - x11
+# networks:
+#     x11:
