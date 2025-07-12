@@ -39,6 +39,8 @@ RUN apt update && apt-get install -y openssh-server sudo
 
 RUN apt-get remove ubuntu-gnome-desktop
 RUN apt-get remove gnome-shell
+RUN apt-get remove firefox
+RUN apt-get remove libreoffice
 
 RUN apt install -y \
     tightvncserver \
@@ -73,6 +75,10 @@ RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/
 RUN echo "PermitRootLogin yes" >>/etc/ssh/sshd_config
 
 RUN chown dockeruser:dockeruser /startup/scripts/*
+
+# Set the correct sh dash has problems with source
+RUN ln -s bash /bin/sh.bash
+RUN mv /bin/sh.bash /bin/sh
 
 RUN bash $SCRIPTS_DIR/pre_install.sh
 
