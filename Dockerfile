@@ -42,6 +42,7 @@ RUN apt-get remove gnome-shell
 RUN apt-get remove firefox
 RUN apt-get remove libreoffice
 
+RUN apt update
 RUN apt install -y \
     tightvncserver \
     metacity \
