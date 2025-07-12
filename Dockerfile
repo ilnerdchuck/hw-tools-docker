@@ -78,8 +78,8 @@ RUN echo "PermitRootLogin yes" >>/etc/ssh/sshd_config
 RUN chown dockeruser:dockeruser /startup/scripts/*
 
 # Set the correct sh dash has problems with source
-RUN ln -s bash /bin/sh.bash
-RUN mv /bin/sh.bash /bin/sh
+# RUN ln -s bash /bin/sh.bash
+# RUN mv /bin/sh.bash /bin/sh
 
 RUN bash $SCRIPTS_DIR/pre_install.sh
 
