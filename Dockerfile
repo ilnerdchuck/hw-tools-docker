@@ -123,8 +123,8 @@ EXPOSE 6080
 
 USER dockeruser
 WORKDIR /home/dockeruser
-ENV NOVNC_PATH = /home/dockeruser/noVNC
-ENV USER_HOME = /home/dockeruser
+ENV NOVNC_PATH=/home/dockeruser/noVNC
+ENV USER_HOME=/home/dockeruser
 
 RUN $SCRIPTS_DIR/install_noVNC.sh
 ENV USER=dockeruser
